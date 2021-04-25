@@ -1,9 +1,9 @@
-# 1a 
+# Program 1a 
 
 C program to copy a file using command line arguments passed to a 
 user defined function.
 
-# 1b
+# Program 1b
 
 C/C++ POSIX compliant program to check the following limits on the system:
 
