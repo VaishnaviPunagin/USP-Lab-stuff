@@ -5,7 +5,7 @@ public class Client1 {
 public static void main(String args[])throws IOException
 {
 Socket sock=new Socket("localhost",5009);
-System.out.println("enter the filename");
+System.out.println("Enter the filename :: ");
 BufferedReader keyread= new BufferedReader(new InputStreamReader(System.in));
 String fname=keyread.readLine();
 OutputStream ostream=sock.getOutputStream();

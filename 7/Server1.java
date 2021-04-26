@@ -5,9 +5,9 @@ public class Server1 {
 public static void main(String args[])throws IOException
 {
 ServerSocket sersock=new ServerSocket(5009);
-System.out.println("Server started");
+System.out.println("\n\nServer started\n");
 Socket sock =sersock.accept();
-System.out.println("Server ready to accept incoming request");
+System.out.println("Server ready to accept incoming request! \n");
 InputStream istream=sock.getInputStream();
 BufferedReader br= new BufferedReader(new InputStreamReader(istream));
 String fname=br.readLine();
@@ -15,7 +15,7 @@ BufferedReader contentRead= new BufferedReader(new FileReader(fname));
 OutputStream ostream=sock.getOutputStream();
 PrintWriter pwrite =new PrintWriter (ostream,true);
 String msg;
-System.out.println("Sending the contents of"+fname+"file");
+System.out.println("Sending the contents of "+fname+" file \n\n");
 while((msg=contentRead.readLine())!=null)
 {
 pwrite.println(msg);
